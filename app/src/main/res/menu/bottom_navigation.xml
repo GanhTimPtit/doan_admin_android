@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/nav_category"
+        android:icon="@drawable/ic_type_book"
+        android:title="@string/type_book" />
+
+    <item
+        android:id="@+id/nav_search"
+        android:icon="@drawable/ic_search_book"
+        android:title="@string/search_book" />
+    <item
+        android:id="@+id/nav_confirm"
+        android:icon="@drawable/ic_confirm_blue"
+        android:title="@string/order" />
+    <item
+        android:id="@+id/nav_statictis"
+        android:icon="@drawable/ic_statictis"
+        android:title="@string/statictis" />
+</menu>

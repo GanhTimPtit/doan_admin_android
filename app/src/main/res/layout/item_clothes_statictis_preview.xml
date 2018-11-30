@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="?attr/selectableItemBackground"
+    android:clickable="true"
+    android:focusable="true"
+    android:paddingRight="8dp"
+    android:paddingLeft="8dp"
+    android:paddingTop="8dp">
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/img_avatar"
+        android:layout_width="@dimen/small_avatar_size"
+        android:layout_height="@dimen/small_avatar_size"
+        android:layout_marginEnd="@dimen/edit_text_padding"
+        android:layout_marginRight="@dimen/edit_text_padding"
+        android:src="@drawable/logo_clothes"
+        app:civ_border_color="@android:color/darker_gray"
+        app:civ_border_width="1dp" />
+
+    <TextView
+        android:id="@+id/txt_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@id/img_avatar"
+        android:layout_toEndOf="@+id/img_avatar"
+        android:layout_toRightOf="@+id/img_avatar"
+        android:ellipsize="end"
+        android:maxLines="2"
+        android:minLines="1"
+        android:text="Tên: "
+        android:textStyle="bold"
+        android:textSize="@dimen/font_size_14sp" />
+    <TextView
+        android:id="@+id/tv_amount_order"
+        android:text="0"
+        android:layout_margin="2dp"
+        android:textColor="@color/colorPrimary"
+        android:textSize="@dimen/font_size_14sp"
+        android:layout_alignParentRight="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:drawableLeft="@drawable/ic_logo_store_blue"/>
+    <TextView
+        android:id="@+id/txt_total_cost"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@id/txt_title"
+        android:layout_alignStart="@id/txt_title"
+        android:layout_below="@id/txt_title"
+        android:ellipsize="end"
+        android:maxLines="1"
+        android:textColor="@color/dark_gray"
+        android:singleLine="true"
+        android:text="Giá: "
+        android:layout_marginTop="2dp"
+        android:textSize="@dimen/font_size_14sp" />
+
+    <TextView
+        android:id="@+id/txt_price"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@id/txt_total_cost"
+        android:layout_below="@+id/txt_title"
+        android:text="15.000Đ"
+        android:textColor="@color/md_red_700"
+        android:textSize="@dimen/font_size_16sp"
+        android:textStyle="italic" />
+    <View
+        android:layout_below="@+id/img_avatar"
+        android:background="@color/light_gray"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginTop="@dimen/fab_margin_8dp"/>
+</RelativeLayout>

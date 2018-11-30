@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".view.statictis.fragment.customer.CustomerStaticFragment">
+    <TextView
+        android:id="@+id/tv_amount_customer"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/md_red_500"
+        android:textStyle="bold"
+        android:text="Tổng khách hàng: "/>
+    <TextView
+        android:id="@+id/tv_amount_rate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/md_red_500"
+        android:textStyle="bold"
+        android:text="Tổng đánh giá: "/>
+    <TextView
+        android:id="@+id/tv_amount_bill"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/md_red_500"
+        android:textStyle="bold"
+        android:text="Tổng đơn hàng: "/>
+    <TextView
+        android:id="@+id/tv_amount_price"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/md_red_500"
+        android:textStyle="bold"
+        android:text="Tổng tiền: "
+        android:layout_marginBottom="@dimen/fab_margin_8dp"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:background="@color/light_gray">
+        <TextView
+            android:text="STT"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/font_size_16sp"
+            android:textColor="@color/md_grey_800"
+            android:textStyle="bold"
+            android:layout_weight="2.9"/>
+        <View
+            android:layout_width="1dp"
+            android:layout_height="match_parent"
+            android:background="@color/dark_gray"/>
+        <TextView
+            android:id="@+id/tv_full_name"
+            android:text="Khách hàng"
+            android:gravity="center"
+            android:textColor="@color/md_grey_800"
+            android:textStyle="bold"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/font_size_16sp"
+            android:drawableRight="@drawable/ic_dow_black"
+            android:layout_weight="1.7"/>
+        <View
+            android:layout_width="1dp"
+            android:layout_height="match_parent"
+            android:background="@color/dark_gray"/>
+        <TextView
+            android:id="@+id/tv_total_rate"
+            android:text="DG"
+            android:textColor="@color/md_grey_800"
+            android:textStyle="bold"
+            android:gravity="center"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/font_size_16sp"
+            android:layout_weight="2.9"/>
+        <View
+            android:layout_width="1dp"
+            android:layout_height="match_parent"
+            android:background="@color/dark_gray"/>
+        <TextView
+            android:id="@+id/tv_total_bill"
+            android:text="DH"
+            android:gravity="center"
+            android:textColor="@color/md_grey_800"
+            android:textStyle="bold"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/font_size_16sp"
+            android:layout_weight="2.9"/>
+        <View
+            android:layout_width="1dp"
+            android:layout_height="match_parent"
+            android:background="@color/dark_gray"/>
+        <TextView
+            android:id="@+id/tv_total_price"
+            android:text="Tổng tiền"
+            android:gravity="center"
+            android:textColor="@color/md_grey_800"
+            android:textStyle="bold"
+            android:drawableRight="@drawable/ic_dow_black"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/font_size_16sp"
+            android:layout_weight="2.3"/>
+
+    </LinearLayout>
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/rc_customer_static"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+    </android.support.v7.widget.RecyclerView>
+</LinearLayout>

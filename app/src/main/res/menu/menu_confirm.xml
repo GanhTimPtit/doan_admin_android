@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="com.example.king.managebook.view.confirmation.detail_order.DetailOrderActivity">
+    <item
+        android:id="@+id/action_confirm"
+        android:orderInCategory="100"
+        android:title="@string/action_confirm"
+        app:showAsAction="always" />
+    <item
+        android:id="@+id/action_cancel"
+        android:icon="@drawable/ic_close_white"
+        android:orderInCategory="100"
+        android:title="@string/submit"
+        android:visible="false"
+        app:showAsAction="always" />
+
+    <item
+        android:id="@+id/action_submit"
+        android:icon="@drawable/ic_tick_white"
+        android:orderInCategory="100"
+        android:title="@string/submit"
+        android:visible="false"
+        app:showAsAction="always" />
+    <item
+        android:id="@+id/action_submit_all"
+        android:icon="@drawable/ic_nocheck_white"
+        android:orderInCategory="100"
+        android:title="@string/submit"
+        android:visible="false"
+        app:showAsAction="always" />
+</menu>

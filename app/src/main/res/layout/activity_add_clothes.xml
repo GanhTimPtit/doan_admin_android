@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".view.shop.add_clothes.AddClothesActivity">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="@color/colorPrimary"
+        app:title="@string/addClothes"
+        app:titleTextColor="#fff" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:paddingBottom="48dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#FFF"
+            android:padding="@dimen/pading_left">
+
+            <ImageView
+                android:id="@+id/img_avatar"
+                android:scaleType="fitXY"
+                android:src="@drawable/logo_clothes"
+                android:layout_width="@dimen/large_avatar_size"
+                android:layout_height="@dimen/large_avatar_size"
+                android:layout_marginRight="@dimen/fab_margin_8dp"/>
+            <ImageView
+                android:id="@+id/img_add"
+                android:src="@drawable/ic_add_photo"
+                android:layout_width="@dimen/small_avatar_size"
+                android:layout_height="@dimen/small_avatar_size"
+                android:layout_margin="@dimen/fab_margin_8dp"/>
+            <EditText
+                android:id="@+id/edt_name_product"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@+id/img_avatar"
+                android:layout_marginBottom="@dimen/text_margin"
+                android:hint="Tên sản phẩm"
+                android:textSize="16sp"/>
+
+            <EditText
+                android:id="@+id/edt_cost_product"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/edt_name_product"
+                android:layout_toRightOf="@+id/img_avatar"
+                android:layout_marginBottom="@dimen/text_margin"
+                android:hint="Giá tiền"
+                android:textSize="16sp" />
+
+        </RelativeLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginBottom="@dimen/view_margin"
+            android:background="@color/gray" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/gray" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#FFF"
+            android:padding="@dimen/pading_left">
+
+            <TextView
+                android:id="@+id/tv_detail_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/text_margin"
+                android:text="Chi tiết sản phẩm"
+                android:textSize="16dp"
+                android:textStyle="bold" />
+
+            <EditText
+                android:id="@+id/edt_detail_product"
+                android:layout_width="match_parent"
+                android:layout_height="150dp"
+                android:gravity="top"
+                android:layout_below="@+id/tv_detail_title"
+                android:background="@drawable/custom_background_textview"
+                android:padding="@dimen/pading_left"
+                android:text="13rfsdfhksdhfakfkasjdfkasdfhksfjd" />
+        </RelativeLayout>
+        <Button
+            android:id="@+id/bt_add"
+            android:background="@drawable/background_button"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Thêm"
+            android:textColor="@color/md_white_1000"
+            android:layout_margin="@dimen/fab_margin_8dp"/>
+    </LinearLayout>
+</LinearLayout>
